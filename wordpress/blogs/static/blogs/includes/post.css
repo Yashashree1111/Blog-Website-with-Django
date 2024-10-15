@@ -1,0 +1,44 @@
+.list_item{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.post {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left; /* Ensure text alignment is left within post */
+}
+
+.blog_img {
+    width: 50%; /* Ensures the image fills the container */
+    height: auto; /* Set your desired height */
+    object-fit: cover; /* This maintains aspect ratio within the fixed dimensions */
+    border-top-left-radius: 8px; /* Optional: Rounded top corners */
+    border-top-right-radius: 8px; /* Optional: Rounded top corners */
+    display: flex; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    
+}
+
+
+
+.post_content {
+    padding: 10px;
+    text-decoration: none; /* Remove underline from text */
+    text-align: center;
+}
+
+.post_content h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333; /* Dark text */
+    text-decoration: none; /* Remove underline from title */
+    text-align: center;
+}
+
+.post_content p {
+    color: #555; /* Medium-dark text */
+    text-decoration: none; /* Remove underline from paragraph */
+    text-align: center;
+}

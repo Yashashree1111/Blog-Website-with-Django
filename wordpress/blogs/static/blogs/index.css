@@ -1,0 +1,60 @@
+
+/* Styling for welcome and about-me sections */
+#welcome, #about-me {
+    padding: 20px;
+    text-align: center;
+   
+}
+
+#about-me{
+    margin-top: 90px;
+    background-color:#222831;
+    color: white;
+}
+#about-me h2{
+    color: white;
+}
+.profile {
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333; /* Dark text */
+}
+
+.quote {
+    font-style: italic;
+    color: #555; /* Medium-dark text */
+}
+
+/* Styling for latest-post section */
+#latest-post {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin: 20px auto; /* Center the section and add margin */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Lifted shadow effect */
+    max-width: 600px; /* Adjust width as needed */
+    text-align: center; /* Center content */
+}
+
+#latest-post h2 {
+    font-size: 28px;
+    color: #333; /* Dark text */
+    margin-bottom: 20px;
+}
+
+#latest-post-list{
+    list-style: none;  /* Ensures no list markers */
+}

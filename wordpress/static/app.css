@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee; /* Default background color for sections */
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #f0f0f0;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+h1,h2 {
+    color: #424242;
+}
+
+/* Styling for header and navigation */
+#main-navigation {
+    background-color: #222831; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#main-navigation h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#main-navigation a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#main-navigation a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title %}{{identified_blog.title}}{% endblock  %}
+
+{% block styles_sheet %}
+    <link rel="stylesheet" href="{% static 'blogs/detailed-post.css' %}">
+{%endblock%}
+
+{% block content%}
+<section id="summary">
+    
+    <h2>{{identified_blog.title}}</h2>
+    <div>
+        {% for tag in post_tags %}
+            <span>{{tag.caption}}</span>
+        {% endfor %}
+    
+    </div>
+
+    <article>
+        <img src="{{identified_blog.image_name.url}}" alt="{{identified_blog.title}}" />
+        <address>By <a href="mailto: {{identified_blog.author.email}}"> {{identified_blog.author}} </a> </address>
+        <div id="update">
+            Last update on <time>{{identified_blog.date| date:"d M Y"}}</time>
+        </div>
+    </article>
+</section>
+<main id ="main-blog">
+    <p>{{identified_blog.content|linebreaks}}</p>
+
+</main>
+<div id="user_comments">
+    {% for comment in comments %}
+        <div class="comment-box">
+            <h3>{{comment.user_name}}</h3>
+            <p>{{comment.user_comment}}</p>
+        </div>
+    {% endfor %}
+</div>
+<section id="comments-section">
+    <h2>Your Comment</h2>
+    <form method="post",action="{% url "detailed-blog" identified_blog.slug %}" >
+        {% csrf_token %}
+        {{form}}
+        <button>Comment</button>
+    </form>
+
+</section>
+
+{%endblock%}

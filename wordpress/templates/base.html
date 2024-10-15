@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title  %}{% endblock  %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'app.css' %}">
+        {%block styles_sheet %} {%endblock%}
+    </head>
+    <body>
+        <header id="main-navigation">
+            <h1>
+                <a href="{% url "starting-page" %}">Home</a>
+            </h1>
+            <nav>
+                <a href="{% url "all-blogs" %}">All Posts</a>
+                <a href="{% url "about-us" %}">About Us</a>
+                <a href="{% url "add_post" %}">Make a Post</a>
+                <a href="{% url "add_author" %}">Register Author</a>
+              
+            </nav>
+    
+        </header>
+        {%block content%} {%endblock%}
+      
+    </body>
+</html>

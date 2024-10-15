@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block styles_sheet %}
+    <link rel="stylesheet" href="{% static 'blogs/new_post.css' %}">
+{%endblock%}
+
+{% block content %}
+<form method="Post" action="{% url "add_post" %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    <button>Post</button>
+</form>
+{% endblock content %}
